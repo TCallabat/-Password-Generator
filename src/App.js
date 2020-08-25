@@ -83,7 +83,7 @@ function App(props) {
                         <Heading styleLevel={2} className={title}>
                             Password Generator
                         </Heading>
-                        <Input value={password} onChange={(event) => setNewPassword(event.target.value)} />
+                        <Input disabled value={password} onChange={(event) => setNewPassword(event.target.value)} />
                         <p>
                             <Button className={width} shape={SHAPE.pill} onClick={() => setNewPassword()}>
                                 Generate password
